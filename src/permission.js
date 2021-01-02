@@ -97,6 +97,5 @@ function filterAsyncRouter(asyncRouterMap = []) {
     }
     return true
   })
-  console.log(accessedRouters)
   return accessedRouters
 }

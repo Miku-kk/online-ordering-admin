@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76fcb2ec-74f5-47f0-9b19-b5e355697608" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/src/views/approvalList/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/prosecution/index.vue" afterDir="false" />
+    <list default="true" id="76fcb2ec-74f5-47f0-9b19-b5e355697608" name="默认的" comment="管理员功能">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/permission.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/permission.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/user.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,17 @@
       <updated>1609323155114</updated>
       <workItem from="1609323156938" duration="616000" />
       <workItem from="1609377621278" duration="10263000" />
+      <workItem from="1609397737993" duration="164000" />
+      <workItem from="1609556945982" duration="2120000" />
     </task>
+    <task id="LOCAL-00001" summary="管理员功能">
+      <created>1609397821777</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609397821777</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -68,5 +79,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="管理员功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="管理员功能" />
   </component>
 </project>
