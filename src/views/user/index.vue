@@ -118,7 +118,7 @@
           <el-input v-model="userForm.phone" />
         </el-form-item>
         <el-form-item label="角色" prop="userRole">
-          <el-select v-model="userForm.userRole" placeholder="角色" @change="$set(roleArr, index, roleArr[index])">
+          <el-select v-model="userForm.userRole" placeholder="角色">
             <el-option
               v-for="item in roleArr"
               :key="item.id"
@@ -177,8 +177,7 @@ export default {
         num: 10
       },
       usersTblTotal: 0,
-      curRow: {},
-      studentGradeArr: [] // 学生年级
+      curRow: {}
     }
   },
   created() {
