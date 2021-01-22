@@ -1,24 +1,16 @@
 import request from '@/utils/request'
 
-export function roleQuery(data) {
+export function typesQuery(data) {
   return request({
-    url: `/api/v1/role/query`,
+    url: `/api/types/query`,
     method: 'post',
     data
   })
 }
 
-// export function getSysRole(data) {
-//   return request({
-//     url: `/api/role/get`,
-//     method: 'post',
-//     data
-//   })
-// }
-
 export function typeCreate(data) {
   return request({
-    url: `/api/v1/role/create`,
+    url: `/api/types/create`,
     method: 'post',
     data
   })
@@ -26,7 +18,7 @@ export function typeCreate(data) {
 
 export function typeUpdate(data) {
   return request({
-    url: `/api/v1/role/update`,
+    url: `/api/types/update`,
     method: 'post',
     data
   })
@@ -34,7 +26,7 @@ export function typeUpdate(data) {
 
 export function typeDelete(data) {
   return request({
-    url: `/api/v1/role/delete`,
+    url: `/api/types/delete`,
     method: 'post',
     data
   })

@@ -37,7 +37,7 @@ export default {
       }
 
       this.levelList = matched.filter(item => item.meta && item.meta.title && item.meta.breadcrumb !== false)
-      console.log(this.levelList)
+      // console.log(this.levelList)
 
       // if (this.levelList[1] && this.levelList[1].meta.title === this.levelList[2] && this.levelList[2].meta.title) {
       //   this.levelList.splice(1, 1)

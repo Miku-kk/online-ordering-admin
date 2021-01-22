@@ -124,7 +124,7 @@
 
 <script>
 import moment from 'moment'
-import { roleQuery, createdSysRole, updateSysRole, deleteSysRole } from '@/api/role'
+import { roleQuery, typeCreate, typeUpdate, typeDelete } from '@/api/role'
 import { getMenuAll, getRoleMenu, setRoleMenu } from '@/api/menu'
 
 export default {
@@ -167,7 +167,7 @@ export default {
     roleQuery() {
       roleQuery({ page: this.page, query: this.queryForm }).then(res => {
         this.tableData = res.data.rows
-        this.tableRowsTotal = res.data.total
+        this.tableRowsTotal = res.data.count
       })
     },
     getMenuAll() {
@@ -186,7 +186,7 @@ export default {
       this.editDialog = true
     },
     createdSysRole() {
-      createdSysRole(this.roleForm).then(res => {
+      typeCreate(this.roleForm).then(res => {
         if (!res.success) {
           this.$message.error(res.msg)
           return
@@ -201,7 +201,7 @@ export default {
       })
     },
     updateSysRole() {
-      updateSysRole(this.roleForm).then(res => {
+      typeUpdate(this.roleForm).then(res => {
         if (!res.success) {
           this.$message.error(res.msg)
           return
@@ -236,7 +236,7 @@ export default {
         cancelButtonText: '取消',
         type: 'warning'
       }).then(() => {
-        deleteSysRole({ id }).then(res => {
+        typeDelete({ id }).then(res => {
           this.$message({
             type: 'success',
             message: '删除成功!'
