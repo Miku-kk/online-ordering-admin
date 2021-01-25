@@ -1,6 +1,6 @@
 import request from '@/utils/request'
 
-export function typesQuery(data) {
+export function applyQuery(data) {
   return request({
     url: `/api/types/query`,
     method: 'post',

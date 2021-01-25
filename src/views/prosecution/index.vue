@@ -87,7 +87,7 @@
 
 <script>
 import moment from 'moment'
-import {typesQuery,typeCreate,typeDelete,typeUpdate} from "@/api/types";
+import {applyQuery,typeCreate,typeDelete,typeUpdate} from "@/api/types";
 
 export default {
   data() {
@@ -119,7 +119,7 @@ export default {
   },
   methods: {
     typesQuery() {
-      typesQuery({ page: this.page, query: this.queryForm }).then(res => {
+      applyQuery({ page: this.page, query: this.queryForm }).then(res => {
         this.tableData = res.data.rows
         this.tableRowsTotal = res.data.count
       })
